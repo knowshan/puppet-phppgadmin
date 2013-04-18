@@ -17,5 +17,5 @@ Please log tickets and issues at our [Projects site](https://github.com/knowshan
 
 Build Status
 ------------
-"!https://travis-ci.org/[knowshan]/[phppgadmin].png!":https://travis-ci.org/[knowshan]/[phppgadmin]
+[![Build Status](https://travis-ci.org/[knowshan]/[phppgadmin].png)](https://travis-ci.org/[knowshan]/[phppgadmin])
 
