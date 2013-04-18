@@ -1,6 +1,6 @@
 name    'knowshan-phppgadmin'
 version '0.0.1'
-source 'https://github.com/knowshan/puppet-phppgadmin'
+source 'git://github.com/knowshan/puppet-phppgadmin.git'
 author 'Shantanu Pavgi'
 license 'Apache License, Version 2.0'
 summary 'Install and configure phpPgAdmin'

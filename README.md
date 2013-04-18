@@ -1,21 +1,33 @@
 puppet-phppgadmin
+=================
 
-This is the phppgadmin Puppet module.
+A Puppet module for configuring phpPgAdmin.
 
-License
+Build Status
+------------
+
+[![Build Status](https://travis-ci.org/[knowshan]/[puppet-phppgadmin].png)](https://travis-ci.org/[knowshan]/[puppet-phppgadmin])
+
+Example
 -------
 
+### Default install without Apache server installation
+    include phppgadmin
 
-Contact
--------
+Recommended usage
+-----------------
 
+* Install and configure Apache web server using puppetlabs/puppetlabs-apache module using separate declaration/include ststement
+* Install and configure phpPgAdmin using this module
+ 
 
 Support
 -------
 
 Please log tickets and issues at our [Projects site](https://github.com/knowshan/puppet-phppgadmin)
 
-Build Status
-------------
-[![Build Status](https://travis-ci.org/[knowshan]/[phppgadmin].png)](https://travis-ci.org/[knowshan]/[phppgadmin])
+License
+-------
+
+Apache License, Version 2.0
 
