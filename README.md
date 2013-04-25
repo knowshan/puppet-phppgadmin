@@ -8,11 +8,18 @@ Build Status
 
 [![Build Status](https://travis-ci.org/knowshan/puppet-phppgadmin.png)](https://travis-ci.org/knowshan/puppet-phppgadmin)
 
-Example
--------
+Examples
+--------
 
 ### Default install without Apache server installation
     include phppgadmin
+
+### Install Apache server (default puppetlabs/puppetlabs-apache httpd install) and phpPgAdmin
+    class {'phppgadmin':
+      db_port        => '3333',
+      install_apache => true,
+    }
+
 
 Recommended usage
 -----------------
