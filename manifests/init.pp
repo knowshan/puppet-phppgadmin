@@ -45,9 +45,19 @@ class phppgadmin (
   $http_conf_file       = $phppgadmin::params::http_conf_file
   $phppgadmin_package   = $phppgadmin::params::phppgadmin_package
   $phppgadmin_conf_file = $phppgadmin::params::phppgadmin_conf_file
-
-  package{$phppgadmin_package:
-    ensure => installed,
+  
+  if $install_apache == 'true' {
+    class {'apache': }
+    class {'apache::mod::php': }
+    package{$phppgadmin_package:
+      ensure  => installed,
+      require => Class['apache::mod::php'],
+    }
+  }
+  else {
+    package{$phppgadmin_package:
+      ensure => installed,
+  }
   }
 
   file{$http_conf_file:
