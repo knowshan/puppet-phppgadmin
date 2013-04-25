@@ -6,13 +6,13 @@ describe 'phppgadmin' do
       let (:facts) {{:operatingsystem => 'CentOS'}}
       it do should contain_file_line('phppgadmin_conf_file_host').with({
         'path'    => '/etc/phpPgAdmin/config.inc.php',
-        'match'   => "\\t\\\$conf\\['servers'\\]\\[0\\]\\['host'\\] = '.*';$", 
+        'match'   => "\\t\\\$conf\\['servers'\\]\\[0\\]\\['host'\\] = '.*';$",
         'line'    => "\t\$conf['servers'][0]['host'] = '';",
         'require' => 'Package[phpPgAdmin]',
       }) end
       it do should contain_file_line('phppgadmin_conf_file_port').with({
         'path'    => '/etc/phpPgAdmin/config.inc.php',
-        'match'   => "\\t\\\$conf\\['servers'\\]\\[0\\]\\['port'\\] = \\d+;$", 
+        'match'   => "\\t\\\$conf\\['servers'\\]\\[0\\]\\['port'\\] = \\d+;$",
         'line'    => "\t\$conf['servers'][0]['port'] = 5432;",
         'require' => 'Package[phpPgAdmin]',
       }) end
@@ -25,4 +25,4 @@ describe 'phppgadmin' do
       }) end
     end
   end
-end       
+end

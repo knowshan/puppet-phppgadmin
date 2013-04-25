@@ -3,7 +3,7 @@
 # Install and configure phpPgAdmin.
 # Recommended usage:
 #  * This module supports basic apache install-config using puppetlabs-apache
-#  module, however, for a complex apache configuration should be handled
+# module, however, for a complex apache configuration should be handled
 # separately. It's not  a limitation of the module, but a good design practice
 # to avoid collision between modules.
 #
@@ -45,8 +45,8 @@ class phppgadmin (
   $http_conf_file       = $phppgadmin::params::http_conf_file
   $phppgadmin_package   = $phppgadmin::params::phppgadmin_package
   $phppgadmin_conf_file = $phppgadmin::params::phppgadmin_conf_file
-  
-  if $install_apache == 'true' {
+
+  if $install_apache == true {
     class {'apache': }
     class {'apache::mod::php': }
     package{$phppgadmin_package:
@@ -69,8 +69,8 @@ class phppgadmin (
 
   file_line{'phppgadmin_conf_file_host':
     path    => $phppgadmin_conf_file,
-    match   => "\\t\\\$conf\\['servers'\\]\\[0\\]\\['host'\\] = '.*';$", 
-    line    => "\t\$conf['servers'][0]['host'] = '$db_host';",
+    match   => "\\t\\\$conf\\['servers'\\]\\[0\\]\\['host'\\] = '.*';$",
+    line    => "\t\$conf['servers'][0]['host'] = '${db_host}';",
     require => Package[$phppgadmin_package],
   }
 
@@ -78,7 +78,7 @@ class phppgadmin (
   file_line{'phppgadmin_conf_file_port':
     path    => $phppgadmin_conf_file,
     match   => "\\t\\\$conf\\['servers'\\]\\[0\\]\\['port'\\] = \\d+;$",
-    line    => "\t\$conf['servers'][0]['port'] = $db_port;",
+    line    => "\t\$conf['servers'][0]['port'] = ${db_port};",
     require => Package[$phppgadmin_package],
   }
 }
