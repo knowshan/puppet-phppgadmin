@@ -4,7 +4,7 @@ source 'git://github.com/knowshan/puppet-phppgadmin.git'
 author 'Shantanu Pavgi'
 license 'Apache License, Version 2.0'
 summary 'Install and configure phpPgAdmin'
-description 'Install and configure phpPgAdmin''
+description 'Install and configure phpPgAdmin'
 project_page 'https://github.com/knowshan/puppet-phppgadmin'
 
 ## Add dependencies, if any:
