@@ -57,7 +57,7 @@ class phppgadmin (
   else {
     package{$phppgadmin_package:
       ensure => installed,
-  }
+    }
   }
 
   file{$http_conf_file:
