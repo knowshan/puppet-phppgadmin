@@ -1,5 +1,5 @@
 name    'knowshan-phppgadmin'
-version '0.0.1'
+version '0.0.2'
 source 'git://github.com/knowshan/puppet-phppgadmin.git'
 author 'Shantanu Pavgi'
 license 'Apache License, Version 2.0'
@@ -9,3 +9,4 @@ project_page 'https://github.com/knowshan/puppet-phppgadmin'
 
 ## Add dependencies, if any:
 dependency 'puppetlabs/apache', '>= 0.6.0'
+dependency 'puppetlabs/postgresql', '>= 2.2.0'
