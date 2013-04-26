@@ -11,12 +11,12 @@ Build Status
 Examples
 --------
 
-### Default install without Apache server installation
+### Default install (no Apache or PostgreSQL server install)
     include phppgadmin
 
-### Install Apache server (default puppetlabs/puppetlabs-apache httpd install) and phpPgAdmin
+### Custom install (with Apache install and custom PostgreSQL server port)
     class {'phppgadmin':
-      db_port        => '3333',
+      db_port        => '5433',
       install_apache => true,
     }
 
@@ -24,9 +24,12 @@ Examples
 Recommended usage
 -----------------
 
-* Install and configure Apache web server using puppetlabs/puppetlabs-apache module using separate declaration/include ststement
-* Install and configure phpPgAdmin using this module
- 
+Use phpPgAdmin module to install and manage phpPgAdmin only.
+Although this module supports default Apache and PostgreSQL installation using
+puppetlabs modules, you should manage them externally for more customization
+and better design. A module shouldn't manage all the resources/services on the
+node, but only the resource/service it is designed to manage. 
+
 
 Support
 -------
