@@ -6,8 +6,8 @@ A Puppet module for configuring phpPgAdmin.
 Build Status
 ------------
 
-knowshan/puppet-phppgadmin: [![Build Status](https://travis-ci.org/knowshan/puppet-phppgadmin.png)](https://travis-ci.org/knowshan/puppet-phppgadmin)
-flipkick/puppet-phppgadmin: [![Build Status](https://travis-ci.org/flipkick/puppet-phppgadmin.png)](https://travis-ci.org/flipkick/puppet-phppgadmin)
+* knowshan/puppet-phppgadmin [![Build Status](https://travis-ci.org/knowshan/puppet-phppgadmin.png)](https://travis-ci.org/knowshan/puppet-phppgadmin)
+* flipkick/puppet-phppgadmin [![Build Status](https://travis-ci.org/flipkick/puppet-phppgadmin.png)](https://travis-ci.org/flipkick/puppet-phppgadmin)
 
 
 Examples
