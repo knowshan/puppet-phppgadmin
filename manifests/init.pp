@@ -40,7 +40,7 @@ class phppgadmin (
   $db_port              = $phppgadmin::params::db_port
 ) inherits phppgadmin::params {
   # Supported OS
-  $supported_os = ['^CentOS$']
+  $supported_os = ['^CentOS$', '^Ubuntu$']
   validate_re($::operatingsystem,$supported_os)
 
   $http_conf_file       = $phppgadmin::params::http_conf_file
@@ -68,7 +68,7 @@ class phppgadmin (
   file{$http_conf_file:
     ensure  => present,
     mode    => '0644',
-    content => template('phppgadmin/phpPgAdmin.conf.erb'),
+    content => template($http_conf_template_file),
     require => Package[$phppgadmin_package],
   }
 
