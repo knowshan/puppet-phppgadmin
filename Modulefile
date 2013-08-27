@@ -8,5 +8,5 @@ description 'Install and configure phpPgAdmin'
 project_page 'https://github.com/knowshan/puppet-phppgadmin'
 
 ## Add dependencies, if any:
-dependency 'puppetlabs/apache', '>= 0.6.0'
-dependency 'puppetlabs/postgresql', '>= 2.2.0'
+#dependency 'puppetlabs/apache', '>= 0.6.0' # optional dependency
+dependency 'puppetlabs/postgresql', '>= 2.1.0'

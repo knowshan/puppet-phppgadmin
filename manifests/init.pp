@@ -39,9 +39,6 @@ class phppgadmin (
   $db_host              = $phppgadmin::params::db_host,
   $db_port              = $phppgadmin::params::db_port
 ) inherits phppgadmin::params {
-  # Supported OS
-  $supported_os = ['^CentOS$', '^Ubuntu$']
-  validate_re($::operatingsystem,$supported_os)
 
   $http_conf_file       = $phppgadmin::params::http_conf_file
   $phppgadmin_package   = $phppgadmin::params::phppgadmin_package
