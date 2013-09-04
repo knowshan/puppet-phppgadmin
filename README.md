@@ -49,6 +49,15 @@ Support
 
 Please log tickets and issues at our [Projects site](https://github.com/knowshan/puppet-phppgadmin)
 
+
+Contributors
+------------
+
+ * [knowshan](https://github.com/knowshan)
+ * [flipkick](https://github.com/flipkick)
+ * [deric](https://github.com/deric)
+
+
 License
 -------
 
