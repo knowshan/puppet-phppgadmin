@@ -7,7 +7,18 @@ Build Status
 ------------
 
 * knowshan/puppet-phppgadmin [![Build Status](https://travis-ci.org/knowshan/puppet-phppgadmin.png)](https://travis-ci.org/knowshan/puppet-phppgadmin)
-* flipkick/puppet-phppgadmin [![Build Status](https://travis-ci.org/flipkick/puppet-phppgadmin.png)](https://travis-ci.org/flipkick/puppet-phppgadmin)
+
+
+Dependencies
+------------
+
+Following dependencies are NOT required with default parameter settings. They
+will be required if Apache web server or PostgreSQL database will be installed
+by this module as well. Since these dependencies are not required by default,
+they are not configured through Modulefile.
+
+ * puppetlabs/puppetlabs-apache
+ * puppetlabs/puppetlabs-postgresql
 
 
 Examples
