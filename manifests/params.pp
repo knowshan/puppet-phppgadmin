@@ -21,7 +21,7 @@
 class phppgadmin::params {
 
   $install_apache     = false   # if true, default apache install using puppetlabs-apache
-  $install_postgres   = false   # if true, default apache install using puppet-postgresql
+  $install_postgres   = false   # if true, default postgresql install using puppet-postgresql
   $db_host            = ''      # default - unix socket connection
   $db_port            = '5432'  #
   
