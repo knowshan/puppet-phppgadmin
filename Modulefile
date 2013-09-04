@@ -1,5 +1,5 @@
 name    'knowshan-phppgadmin'
-version '0.0.2'
+version '0.0.3'
 source 'git://github.com/knowshan/puppet-phppgadmin.git'
 author 'Shantanu Pavgi'
 license 'Apache License, Version 2.0'
